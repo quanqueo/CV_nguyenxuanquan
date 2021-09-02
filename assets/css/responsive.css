@@ -339,8 +339,16 @@
     #content ul.list-product{
         flex-wrap: nowrap;
         justify-content: unset;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
     }
+
+    #content ul.list-product::-webkit-scrollbar { 
+        width: 0 !important;
+        display: none; 
+      }
     #content ul.list-product li.product {
         flex: 0 0 50%;
         margin-bottom: 0px;
@@ -447,10 +455,6 @@
 
     .h2-active{
         background: #eb9335!important;
-    }
-
-    #content #list-product-small ul.list-product-small{
-       
     }
 
 
@@ -814,15 +818,22 @@
 
 
 
-
-
     #content ul.list-product{
-        overflow-x: scroll;
         flex-wrap: nowrap;
         justify-content: unset;
-        scrollbar-width: unset;
-        overflow-x: hidden;
+        cursor: grabbing;
+        /* overflow-x: scroll; */
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
     }
+
+    #content ul.list-product::-webkit-scrollbar { 
+        width: 0 !important;
+        display: none; 
+    }
+
+
 
     #content ul.list-product li.product{
         flex: 0 0 38%;
