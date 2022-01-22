@@ -296,23 +296,23 @@ body{
 
 
     ul.list-product{
+        margin: 0px 15px;
         flex-wrap: wrap;
         padding: 0px;
         justify-content: center;
 
         li.product{
-            width: 285px;
-            height: 438px;
+            width: 20%;
             padding: 0px 15px;
-            margin-bottom: 34px;
-            justify-content: left;
+            margin-bottom: 40px;
+            // justify-content: left;
             overflow: hidden;
             position: relative;
 
             a.link-product-img{
                 border: 2px solid white;
-                width: 100%;
-                height: 345px;
+                min-width: 100%;
+                height: auto;
                 display: block;
                 margin-bottom: 25px;
                 background-image: url("../images/background-img.png");
@@ -346,8 +346,8 @@ body{
 
             .product-action{
                 position: absolute;             
-                bottom: 110px;
-                left: 45px;
+                bottom: 30%;
+                left: 17%;
                 display: none;
                 a.link-action{
                     background: @color-link;
@@ -432,21 +432,28 @@ body{
         padding: 0px 30px;
         opacity: 0.8;
         .discount-date-left{
-            display: block;
-            width: 456px;
-            height: 927px;
+            // display: block;
+            width: 33%;
+            height: auto;
             background-image: url("../images/discount-1.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             
-            
+            h2:first-child{
+                font-size: 100%; top: 27%;left: 13%;
+            }
+
+            h2:nth-child(2){
+                font-size: 250%; top: 27%;left: 10%;
+            }
+
             a{
                 color: white;
                 padding: 18px 28px;
                 border: 1px solid white;
-                top: 575px;
-                left: 145px;
+                top: 60%;
+                left: 30%;
                 opacity: 1;
             } 
 
@@ -457,23 +464,26 @@ body{
 
             .date{
                 text-align: center;
-                top: 410px;
-                left: 35px;
+                top: 43%;
+                left: 10%;
                 
                 span{
-                    font-size: 45px;
+                    font-size: 200%;
                 }
             }
         }
 
         .discount-date-right{
+            width: 66%;
             .content-top{
+                // width: 100vh;
                 margin-left: 30px;
                 margin-bottom: 34px;
                 background-image: url("../images/discount-2.png");
                 background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
-                padding: 119px 0px 120px 67px;
+                padding: 119px 0px 120px 10%;
 
                 h3{
                     color: white;
@@ -483,29 +493,28 @@ body{
                 p{
                     color: @color-link;
                     font-size: 18px;
-                    width: 500px;
+                    width: 60%;
                 }
                 a{
                     color: white;
                     padding: 18px 28px;
                     border: 1px solid white;
-                    bottom: 0px;
-                    left: 10px;
+                    // bottom: 0px;
+                    // left: 10px;
                     margin-top: 33px;
                     display: inline-block;
                 }
 
                 a:hover{
                     background: @color-hover;
-                    border:1px solid @color-hover;
+                    border: 1px solid @color-hover;
                 }
             }
 
 
             .content-bot{
-                display: block;
-                width: 928.3px;
-                height: 447.8px;
+                display: flex;
+                height: auto;
                 margin-left: 30px;
                 a{
                     color: white;
@@ -515,7 +524,7 @@ body{
 
                 a:hover{
                     background: @color-hover;
-                    border:1px solid @color-hover;
+                    border: 1px solid @color-hover;
                 }
                 
 
@@ -526,7 +535,7 @@ body{
                     background-repeat: no-repeat;
                     padding: 184px 0px 180px 40px;
                     display: inline-block;
-                    width: 450px;
+                    width: 50%;
                     margin-right: 23px;
 
                     h2{
@@ -546,7 +555,7 @@ body{
                     background-repeat: no-repeat;
                     padding: 184px 0px 180px 40px;
                     display: inline-block;
-                    width: 450px;
+                    width: 50%;
 
                     h2{
                         margin: 0px;
