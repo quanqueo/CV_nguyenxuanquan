@@ -72,7 +72,7 @@ body{
 }
 
 #wrapper{
-    max-width: 1475px!important;
+    // max-width: 1475px!important;
     margin: 0px auto;
 }
 
@@ -269,10 +269,13 @@ body{
 
         .container-l{
             position: relative;
+            justify-content: center;
         }
         .logo-header{
-            margin-right: 200px;
-            line-height: 66px;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         ul.menu{
@@ -851,6 +854,7 @@ body{
         .icon-header{
             position: absolute;
             right: 0px;
+
             a.link-icon{
                 line-height: 66px;
 
@@ -1337,6 +1341,9 @@ body{
                     margin-top: 10px;
                 }
             }
+        }
+
+        .price{
         }
     }
     // -------------------end content------------------- 
