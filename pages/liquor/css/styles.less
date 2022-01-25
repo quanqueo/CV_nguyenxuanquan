@@ -265,8 +265,11 @@ body{
         width: 100%;
         border-bottom: 1px solid rgb(235, 233, 233);
         z-index:2;
-        position: relative;
+        // position: relative;
 
+        .container-l{
+            position: relative;
+        }
         .logo-header{
             margin-right: 200px;
             line-height: 66px;
@@ -847,7 +850,7 @@ body{
 
         .icon-header{
             position: absolute;
-            right: 5%;
+            right: 0px;
             a.link-icon{
                 line-height: 66px;
 
@@ -1055,6 +1058,23 @@ body{
                     left: 73px;
                     display: none;
 
+                    a.link-action:first-child{
+                        background:rgb(22, 22, 22);
+                        
+                        i{
+                            color: white;
+                            transition: 0.4s;
+                        }
+                    }
+                    a.link-action:first-child:hover{
+                        background: rgb(90, 89, 89);
+                        border: 1px solid rgb(241, 235, 235);
+
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                    
                     a.link-action{
                         background: @bg;
                         padding: 13px;
