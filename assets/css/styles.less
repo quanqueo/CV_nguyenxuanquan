@@ -721,18 +721,20 @@ body{
             li{
                 position: relative;
                 border: 1px solid #2b2b30;
-                width: 235px;
-                height: 136px;
+                width: 16.6%;
+                height: auto;
             
 
                 .show-detail{
                     background: @color-hover;
-                    height: 135px;
-                    width: 235px;
+                    height: 100%;
+                    width: 100%;
                     position: absolute;
-                    top: 0px;
-                    flex-direction: column;
-                    display: none;
+                    top: 0;
+                    // flex-direction: column;
+                    transform: scaleY(0);
+                    transform-origin: 100% 0%;
+                    transition: 0.6s;
 
                     a{
                         font-size: 24px;
@@ -751,6 +753,10 @@ body{
                         display: block;
                     }
                 }
+            }
+
+            li:hover .show-detail{
+                transform: scaleY(1);
             }
         }
     }

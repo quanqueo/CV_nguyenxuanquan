@@ -16,9 +16,6 @@ $(document).ready(function(){
     $("li.brand-item img").addClass("m-auto d-block");
 
 
-    $("li.feature-brand-item").hover(function(){
-        $(this).children(".show-detail").stop().slideToggle(700).css("opacity", "0.9");
-    });
 
     $("li.feature-brand-item img").addClass("img-fluid");
 
