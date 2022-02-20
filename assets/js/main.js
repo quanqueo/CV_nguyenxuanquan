@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
 
-    $("li.feature-brand-item img").addClass("img-fluid");
+    // $("li.feature-brand-item img").addClass("img-fluid");
 
 
     $("li.product").hover(function(){
