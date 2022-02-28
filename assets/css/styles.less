@@ -93,14 +93,23 @@ body{
     background: @bg;
 
     
+    #main-nav{
+        justify-content: center;
+        flex: none;
+        width: 70%;
+    }
 
     nav{
         height: 100px;
 
         .logo{
-            width: 70px;
-            margin: 0px 100px 10px 15px;
+            margin: 0px;
             padding: 0px;
+            width: 15%;
+            a{
+                display: inline-block;
+                width: 100px;
+            }
         }
     }
     ul{
@@ -221,7 +230,6 @@ body{
     
 
     .icon-menu{
-        margin-right: 30px;
         position: fixed;
         right: 0;
         a.link-icon-menu{
@@ -404,7 +412,7 @@ body{
             margin: 45px 30px 100px;
 
             li.brand-item{
-                padding: 0px 90px;
+                width: 16.5%;
 
                 a.link-img-brand{
                     display: block;
@@ -417,8 +425,8 @@ body{
                 a.link-brand{
                     color: @color-link;
                     display: block;
-                    margin-top: -5px;
                     font-size: 18px;
+                    text-align: center;
                 }
 
                 a.link-brand:hover{
